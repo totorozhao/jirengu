@@ -1,0 +1,48 @@
+html {
+  font: 12px Helvetica, Arial, sans-serif;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #F1F1F1;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #81766A;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #A67C48;
+  text-shadow: 3px 3px 1px #ECB37B;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+dl {
+  line-height: 1.62;
+}
+
+p {
+  text-indent: 2em;
+  line-height: 1.62;
+}
+
+p a {
+  display: block;
+  float: right;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+td {
+    padding: 6px 13px;
+    border: 1px solid black;
+}

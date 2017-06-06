@@ -1,0 +1,78 @@
+ body {
+     margin: 0 auto;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     color: #fff;
+     background-color: rgba(34, 34, 34, 0.85);
+     font-family: cursive, Hiragino Sans GB;
+ }
+
+ #cover,
+ #content,
+ #footer {
+     text-align: center;
+ }
+
+ #cover p,
+ h2 {
+     width: 100%;
+     margin: 0 auto;
+     margin-top: 5%;
+     font-size: 20px;
+     opacity: 0.8;
+ }
+
+ ul {
+     margin: 5% auto;
+     color: #fff;
+     width: 40%;
+     position: relative;
+     text-align: left;
+ }
+
+ li {
+     list-style: none;
+     display: block;
+     height: 23px;
+     background: url(./image/finish.png) no-repeat 0px 4px;
+ }
+
+ a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ li span,
+ li a {
+     display: block;
+     float: left;
+     margin-left: 6%;
+ }
+
+ li span {
+     width: 19%;
+ }
+ .task {
+     width: 32%;
+ }
+
+ .couslink {
+     width: 30%;
+ }
+ #footer {
+     margin: 0, auto;
+     width: 100%;
+     padding: 5% 0;
+     font-family: "微软雅黑";
+ }
+
+ #footer strong {
+     font-size: 30px;
+ }
