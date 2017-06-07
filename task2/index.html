@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <table>
+            <caption>日程表</caption>
+            <colgroup>
+                <col style="background-color: #EAEFD8">
+                <col style="background-color: #D8E4D6">
+                <col style="background-color: #D1E2DA">
+                <col style="background-color: #CDDEE6">
+                <col style="background-color: #D6E9F7">
+                <col style="background-color: #EAEFD8">
+                <col style="background-color: #D8E4D6">
+                <col style="background-color: #D1E2DA">
+            </colgroup>
+            <thead>
+                <th></th>
+                <th>Mon.</th>
+                <th>Tues</th>
+                <th>Wed.</th>
+                <th>Thu.</th>
+                <th>Fri.</th>
+                <th>Sat.</th>
+                <th>Sun.</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:40-9:00</td>
+                    <td>起床</td>
+                    <td>睡不醒...</td>
+                    <td>懵...</td>
+                    <td>睡不醒...</td>
+                    <td>起床</td>
+                    <td rowspan="2">烂在床上...</td>
+                    <td rowspan="2">烂在床上...</td>
+                </tr>
+                <tr class="odd">
+                    <td>9:00-12:00</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                </tr>
+                <tr>
+                    <td>12:00-13:30</td>
+                    <td>午休</td>
+                    <td>午休</td>
+                    <td>午休</td>
+                    <td>午休</td>
+                    <td>午休</td>
+                    <td>吃饭</td>
+                    <td>吃饭</td>
+                </tr>
+                <tr class="odd">
+                    <td>13:30-17:30</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>工作</td>
+                    <td>学习</td>
+                    <td>学习</td>
+                </tr>
+                <tr>
+                    <td>17:30-19:00</td>
+                    <td>晚饭</td>
+                    <td>晚饭</td>
+                    <td>晚饭</td>
+                    <td>晚饭</td>
+                    <td>晚饭</td>
+                    <td>晚饭</td>
+                    <td>晚饭</td>
+                </tr>
+                <tr class="odd">
+                    <td>19:00-20:20</td>
+                    <td>活动+跑步</td>
+                    <td>活动+跑步</td>
+                    <td>活动+跑步</td>
+                    <td>活动+跑步</td>
+                    <td>活动+跑步</td>
+                    <td>活动+跑步</td>
+                    <td>活动+跑步</td>
+                </tr>
+                <tr>
+                    <td>20:20-22:30</td>
+                    <td>自学</td>
+                    <td>上课</td>
+                    <td>自学</td>
+                    <td>上课</td>
+                    <td>出去浪~</td>
+                    <td>自学</td>
+                    <td>上课</td>
+                </tr>
+                <tr class="odd">
+                    <td>22:30--&nbsp;</td>
+                    <td>睡觉~zZ</td>
+                    <td>睡觉~zZ</td>
+                    <td>睡觉~zZ</td>
+                    <td>睡觉~zZ</td>
+                    <td>睡觉~zZ</td>
+                    <td>迟迟不肯睡去...</td>
+                    <td>睡觉~zZ</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <hr> 
+        <h2>会员信息表单</h2>
+        <form action="" method="post" >
+            <table>
+                <tr>
+                    <td><label for="input_username">用户名：</label></td>
+                    <td><input id="input_username" name="username" type="text" placeholder="输入用户名" autofocus/></td>
+
+                </tr>
+                <tr>
+                    <td><label for="input_pass">密码：</label></td>
+                    <td> <input id="input_pass" minlength="6" name="password" type="password" placeholder="输入密码" /></td>
+
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td><label for="c1">男</label><input type="radio" id="c1" name="sex" value="1" />
+                        <label for="c2">女</label><input type="radio" id="c2" name="sex" value="2" />
+                        <label for="c3">保密</label><input type="radio" id="c3" name="sex" value="3" checked="checked" /></td>
+
+                </tr>
+                <tr>
+                    <td>手机号码：</td>
+                    <td> <input type="tel" name="tele" value="" /> </td>
+                </tr>
+                <tr>
+                    <td>邮箱：</td>
+                    <td><input type="email" name="email" value="" /></td>
+                </tr>
+                <tr>
+                    <td>所在城市：</td>
+                    <td><select name="city" >
+            <option value="10010">北京</option>
+             <option value="10089">天津</option>
+              <option value="10029">河北</option>
+               <option value="10010">山东</option>
+        </select></td>
+                </tr>
+                <tr>
+                    <td> 具体地址：</td>
+                    <td><textarea name="address" rows="5" cols="24" placeholder="填写具体地址"></textarea></td>
+                </tr>
+                <tr>
+                    <td>照骗：</td>
+                    <td> <input type="file" name="filename" value=""></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="reset" value="reset">
+                    <input type="submit" value="submit"></td>
+                </tr>
+
+
+            </table>
+
+        </form>
+        <hr>
+        <form oninput="result.value =Math.pow(parseInt(a.value), parseInt(b.value))">
+            <input type="number" name="a" value="2"> +
+            <input type="number" name="b" value="3"> =
+            <output name="result">8</output>
+        </form>
+    </div>
+</body>
+
+</html>

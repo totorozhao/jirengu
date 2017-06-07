@@ -1,0 +1,47 @@
+ body {
+     color: rgba(34, 34, 34, 0.85);
+     background-color: #fff;
+     font-family: cursive, Hiragino Sans GB;
+ }
+
+ .content {
+     text-align: center;
+     margin: 0 auto;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+ }
+
+ table {
+     margin: 0 auto;
+     padding: 0;
+     border-collapse: collapse;
+     border-spacing: 0
+ }
+
+ h2 {
+     margin: 0 auto;
+     padding: 0;
+     text-align: center;
+ }
+
+ form {
+     margin: 20px;
+     text-align: center;
+ }
+
+ td {
+     font-family: "微软雅黑";
+     padding: 6px 13px;
+     border: 1px solid #BECDD0;
+ }
+
+ caption {
+     font-size: 16px;
+     font-family: "微软雅黑";
+     padding: 6px 13px;
+ }
+
+ .odd {
+     background-color: #E0E0E0;
+ }
