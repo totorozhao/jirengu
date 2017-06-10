@@ -1,0 +1,243 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    height: 100%;
+    background: #f7fafc;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: auto;
+    padding: 30px 0;
+}
+
+.header {
+    padding: 0;
+    text-align: center;
+}
+
+
+/*关于logo尺寸 注意有{} 
+min-width: 表示大于740px的设备使用什么样式
+max-width: 表示小于740px的设备使用什么样式
+*/
+
+@media (min-width: 740px) {
+    .logo {
+        width: 160px;
+        height: 74px;
+    }
+}
+
+@media (max-width: 740px) {
+    .logo {
+        width: 96px;
+        height: 44.4px;
+    }
+    .hidden-footer,
+    .chengxing {
+        display: none;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+    /*width: 160px;
+    height: 74px;*/
+    text-align: center;
+    background: url(../images/logo1.png) no-repeat;
+    background-size: contain;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    line-height: 1;
+    margin: 30px 0 20px;
+}
+
+.content {
+    padding: 0;
+    text-align: center;
+}
+
+.navs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.nav {
+    display: inline-block;
+    width: 4em;
+    line-height: 35px;
+    text-align: center;
+}
+
+.nav {
+    color: #555;
+}
+
+.nav:first-child {
+    color: #0f88eb;
+}
+
+.group-input {
+    margin: auto;
+    width: 298px;
+    padding: 1px 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+}
+
+.input-wrapper {
+    height: 47px;
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+}
+
+.button-wrapper {
+    margin: auto;
+    width: 298px;
+    margin-top: 22px;
+}
+
+.input-wrapper:first-child {
+    border-top: 0;
+}
+
+input {
+    outline: none;
+    padding: 1em .8em;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    line-height: 19px;
+    box-sizing: border-box;
+    border: 0;
+    font-family: inherit;
+    color: #555;
+}
+
+input:focus {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #fff;
+}
+
+.sign {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 0;
+    background: #0f88eb;
+    font-size: 15px;
+    line-height: 41px;
+    color: #fff;
+    border-radius: 3px;
+    font-family: inherit;
+    outline: 0;
+    cursor: pointer;
+}
+
+.tip {
+    margin-top: 21px;
+    font-size: 13px;
+    text-align: center;
+    color: #999;
+}
+
+.tip a {
+    color: #698ebf;
+    text-decoration: none;
+}
+
+.download {
+    margin: 0 auto;
+    width: 298px;
+}
+
+.download button {
+    display: block;
+    margin: 48px auto 0;
+    width: 100%;
+    border: 0;
+    background: 0 0;
+    font-size: 15px;
+    line-height: 39px;
+    color: #5fa6e5;
+    border-radius: 3px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #96c2e9;
+    cursor: pointer;
+}
+
+.footer,
+.hidden-footer,
+.chengxing {
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    color: #aebdc9;
+}
+
+
+/*tab切换*/
+
+.bar-rel {
+    position: relative;
+    display: inline-block;
+}
+
+.bar {
+    position: absolute;
+    width: 2.4em;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #0f88eb;
+    margin: 0 .8em;
+}
+
+.hidden-footer,
+.chengxing {
+    line-height: 21px;
+    text-align: center;
+}
+
+.hidden-footer span,
+.hidden-footer a {
+    color: #aebdc9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden-footer .dot {
+    margin: 0 3px;
+}
+
+.hidden-footer {
+    margin-top: 42px;
+}
+
+.chengxing {
+    border-top: #ebeef0 1px solid;
+    width: 38%;
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+.chengxing img {
+    width: 138px;
+    height: 26px;
+}
