@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 60px;
+    color: white;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .fa {
+    font-size: 30px;
+}
+
+main {
+    flex-grow: 1;
+    font-size: 28px;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main ul li{
+    color: #333;
+    display: flex;
+    margin: 0 20px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+main ul li .fa {
+    margin: 0 10px;
+}
+
+.special {
+    padding-right: 10px;
+    display: flex;
+    
+}
+
+footer ul {
+    display: flex;
+    flex: 1;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+footer .fa {
+    font-size: 24px;
+}
+
+footer ul>li {
+    display: flex;
+    flex-direction: column;
+}
