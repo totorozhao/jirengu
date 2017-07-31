@@ -1,0 +1,106 @@
+$max-width: 558px;
+$top-color:rgba(161, 154, 173, 0.3);
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0; //background: #70799A;
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: $max-width;
+  max-height: 846px;
+  display: flex;
+  flex-direction: column;
+  font-size: 62px;
+  @media (max-width: 760px) {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .free {
+    margin: 0 2%;
+    flex: 1;
+    background-color: $top-color;
+    height: 20vh;
+    position: relative;
+    @media (max-width: 760px) {
+      margin: 0;
+      font-size: 36px;
+    }
+  }
+  .show {
+    margin: 0 -2%;
+    position: absolute;
+    width: 104%;
+    bottom: 3vh;
+    border-radius: 6px;
+    flex: 1;
+    background-color: rgba(64, 71, 85, 0.83);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    line-height: 62px;
+    @media (max-width: 760px) {
+      height: calc(100vw / 4 *1.5);
+      line-height: 48px;
+      margin: 0;
+      width: 100%;
+    }
+    #expression {
+      font-size: 34px;
+      color: #aba6a6;
+      padding: 0 2%;
+    }
+    #result {
+      padding: 0 2%;
+    }
+  }
+  #keypad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    font-size: 46px;
+    @media (max-width: 760px) {
+      font-size: 32px;
+      margin: 0;
+    }
+    .keybtn {
+      color: #7e7e7f;
+      flex-grow: 1;
+      flex-basis: 25%;
+      height: calc(100vw / 4);
+      max-height: 136px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &.evaluate,
+      &.operator {
+        background-color: $top-color;
+      }
+      &.number {
+        // background-color: #F4F4F6;
+        background-color: #f7f7fc;
+      }
+      &.equal {
+        flex-grow: 0;
+      }
+    }
+  }
+}
